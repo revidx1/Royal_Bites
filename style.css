@@ -43,6 +43,16 @@ body {
     font-weight: 700;
     font-size: 1.1rem;
     font-family: 'Georgia', serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-logo-img {
+    height: 35px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
