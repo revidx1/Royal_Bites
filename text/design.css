@@ -1,0 +1,132 @@
+
+.galerie-header {
+    position: relative;
+    background-image: url('logo.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.galerie-header .header-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.galerie-header .header-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.galerie-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #f5ead8;
+    margin: 10px 0;
+}
+
+.header-sub {
+    font-size: 16px;
+    color: #b0a090;
+    font-style: italic;
+}
+
+
+.filtres {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.filtre-btn {
+    padding: 8px 22px;
+    border: 1px solid rgba(212,175,80,0.4);
+    background: transparent;
+    color: #D4AF50;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.filtre-btn:hover,
+.filtre-btn.active {
+    background: #D4AF50;
+    color: #1a0f00;
+}
+
+.galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0 30px 60px;
+}
+
+
+.galerie-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    cursor: pointer;
+}
+
+.galerie-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.galerie-item:hover img {
+    transform: scale(1.08);
+}
+
+.galerie-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    gap: 8px;
+}
+
+.galerie-item:hover .galerie-overlay {
+    opacity: 1;
+}
+
+.galerie-nom {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #f5ead8;
+}
+
+.galerie-tag {
+    font-size: 11px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    background: #D4AF50;
+    color: #1a0f00;
+}
+.site-footer{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .galerie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galerie-grid {
+        grid-template-columns: 1fr;
+    }
+}

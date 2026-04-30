@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="images/logo_onlyicon_nobg.png">
+    <title>Royal Bites</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Royal Bites</div>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Accueil</a></li>
+            <li class="nav-item"><a href="menu.html">Menu</a></li>
+            <li class="nav-item"><a href="gallery.html">Galerie</a></li>
+            <li class="nav-item"><a href="reservation.html">Réserver</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <video class="home_video" loop autoplay muted playsinline preload="metadata" aria-label="Royal Bites promo video">
+            <source src="videos/home_page_vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="divdiv">
+            <h2 class="home_h2">Bienvenue chez Royal Bites,</h2>
+            <p class="home_p">un restaurant où l’élégance rencontre la gastronomie. Nous vous invitons à vivre une expérience culinaire unique, où chaque plat est soigneusement préparé avec des ingrédients de qualité et une attention particulière aux détails.<br>
+            Dans une ambiance raffinée et chaleureuse, notre équipe passionnée vous propose une cuisine savoureuse inspirée des traditions culinaires du monde, revisitée avec une touche moderne. Que ce soit pour un dîner romantique, un repas en famille ou une occasion spéciale, Royal Bites est l’endroit idéal pour savourer des moments inoubliables.<br>
+
+            Laissez-vous séduire par nos créations, notre service exceptionnel et notre atmosphère luxueuse. Chez Royal Bites, chaque bouchée est une expérience royale.</p>
+        </div>
+    </section>
+
+    <div class="generaldiv">
+        <div class="home_images">
+            <img src="dishes/1.jpeg" alt="Image de plat gastronomique 1" class="home_img1">
+            <div class="image-caption">Entrecôte grillée </div>
+        </div>
+        <div class="home_images">
+            <img src="dishes/2.jpeg" alt="Image de plat gastronomique 2" class="home_img1">
+            <div class="image-caption">Gambas flambées</div>
+        </div>
+        <div class="home_images">
+            <img src="dishes/3.jpeg" alt="Image de plat gastronomique 3" class="home_img1">
+            <div class="image-caption">Salade César</div>
+        </div>
+        <div class="home_images">
+            <img src="dishes/4.jpg" alt="Image de plat gastronomique 4" class="home_img1">
+            <div class="image-caption">Garlic Butter Steak</div>
+        </div>
+    </div>
+
+    <button onclick="window.location.href='reservation.html'" class="reservation-btn">Réservez votre table</button>
+</body>
+</html>
