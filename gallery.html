@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Bites | Galerie</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="icon" href="images/logo_onlyicon_nobg.png">
-    <title>Royal Bites | Galerie</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-logo">Royal Bites</div>
-        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()"><span class="hamburger"></span></button>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+            <span class="hamburger"></span>
+        </button>
         <ul class="nav-links">
             <li class="nav-item"><a href="index.html">Accueil</a></li>
             <li class="nav-item"><a href="menu.html">Menu</a></li>
@@ -21,9 +23,140 @@
         </ul>
     </nav>
 
-    <main style="padding: 120px 20px; max-width: 1000px; margin: 0 auto; color: #fff;">
-        <h1>Galerie</h1>
-        <p>Page galerie placeholder — remplacez par vos photos et descriptions.</p>
+    <header class="galerie-header">
+        <div class="header-overlay"></div>
+        <div class="header-inner">
+            <p class="header-tag">Royal Bites</p>
+            <h1>📸 Notre Galerie</h1>
+            <div class="divider">
+                <span class="line"></span>
+                <span class="diamond"></span>
+                <span class="line"></span>
+            </div>
+            <p class="header-sub">Découvrez notre univers en images</p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="filtres">
+            <button class="filtre-btn active" onclick="filtrer('tous')">Tous</button>
+            <button class="filtre-btn" onclick="filtrer('plats')">🍽️ Plats</button>
+            <button class="filtre-btn" onclick="filtrer('restaurant')">🏠 Restaurant</button>
+            <button class="filtre-btn" onclick="filtrer('boissons')">🥤 Boissons</button>
+        </div>
+
+    
+        <div class="galerie-grid">
+
+        
+            <div class="galerie-item" data-categorie="plats">
+                <img src="images/Entrecôte_grillée.jpg" alt="Entrecôte grillée">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Entrecôte grillée</span>
+                    <span class="galerie-tag">Plat principal</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="plats">
+                <img src="images/Caesar_Salad.jpg" alt="Salade César">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Salade César</span>
+                    <span class="galerie-tag">Entrée</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="plats">
+                <img src="images/Gambas_flambées.jpg" alt="Gambas flambées">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Gambas flambées</span>
+                    <span class="galerie-tag">Spécialité</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="plats">
+                <img src="images/Sushi.jpg" alt="Sushi Royal">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Sushi Royal</span>
+                    <span class="galerie-tag">Royal Touche</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="plats">
+                <img src="images/Veggie_Burger.jpg" alt="Veggie Burger">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Veggie Burger</span>
+                    <span class="galerie-tag">Fast food</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="plats">
+                <img src="images/Pizza.jpg" alt="Pizza">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Pizza</span>
+                    <span class="galerie-tag">Fast food</span>
+                </div>
+            </div>
+
+        
+            <div class="galerie-item" data-categorie="restaurant">
+                <img src="images/salle_de_restaurant.jpg" alt="Notre salle">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Notre salle</span>
+                    <span class="galerie-tag">Ambiance</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="restaurant">
+                <img src="images/terrasse.jpg" alt="Terrasse">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Terrasse</span>
+                    <span class="galerie-tag">Extérieur</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="restaurant">
+                <img src="images/cuisine.jpg" alt="Notre cuisine">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Notre cuisine</span>
+                    <span class="galerie-tag">Coulisses</span>
+                </div>
+            </div>
+
+
+            <div class="galerie-item" data-categorie="boissons">
+                <img src="images/jus_d_orange.jpg" alt="Jus d'orange">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Jus d'orange</span>
+                    <span class="galerie-tag">Frais</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="boissons">
+                <img src="images/Smoothie.jpg" alt="Smoothie">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Smoothie</span>
+                    <span class="galerie-tag">Frais</span>
+                </div>
+            </div>
+
+            <div class="galerie-item" data-categorie="boissons">
+                <img src="images/Thé.jpg" alt="Thé à la menthe">
+                <div class="galerie-overlay">
+                    <span class="galerie-nom">Thé à la menthe</span>
+                    <span class="galerie-tag">Chaud</span>
+                </div>
+            </div>
+
+        </div>
+
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-logo">🍽️ Royal Bites</div>
+        <p class="footer-info">Ouvert 7j/7 — 12h à 23h</p>
+        <p class="footer-copy">© 2026 Royal Bites. Tous droits réservés.</p>
+    </footer>
+
 </body>
 </html>

@@ -23,4 +23,23 @@ function resetForm() {
     }
 
 
+    function filtrer(categorie) {
+
+    
+            document.querySelectorAll('.filtre-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+
+            document.querySelectorAll('.galerie-item').forEach(item => {
+                if (categorie === 'tous') {
+                    item.style.display = 'block';
+                } else if (item.dataset.categorie === categorie) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
 
