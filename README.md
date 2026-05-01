@@ -18,6 +18,7 @@ JavaScript (Filtres, Formulaires)
 1. Clone le repository
 2. Ouvre index.html dans ton navigateur
 * Auteurs *
+  
 Mohamed ELAZAQUI -> Page menu + Page gallery
 
 Youssef BEHLAFI -> Page accueil + Page de reservation
