@@ -19,5 +19,7 @@ JavaScript (Filtres, Formulaires)
 2. Ouvre index.html dans ton navigateur
 * Auteurs *
 Mohamed ELAZAQUI -> Page menu + Page gallery
+
 Youssef BEHLAFI -> Page accueil + Page de reservation
+
 Yassine BEN EL HIRCHE -> Page contact
