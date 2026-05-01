@@ -17,7 +17,8 @@ JavaScript (Filtres, Formulaires)
 * Comment lancer le projet *
 1. Clone le repository
 2. Ouvre index.html dans ton navigateur
-* Auteurs *
+
+*Auteurs *
   
 Mohamed ELAZAQUI -> Page menu + Page gallery
 
