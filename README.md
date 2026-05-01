@@ -1,5 +1,5 @@
 Royal Bites Site Restaurant
-* Description *
+*Description *
 Site web d'un restaurant gastronomique réalisé
 avec HTML, CSS et JavaScript.
 * Pages *
@@ -10,7 +10,7 @@ menu.html
 gallery.html -> Galerie photos
 contact.html -> Nous contacter
 reservation.html -> Reserver votre table
-* Technologies utilisées *
+*Technologies utilisées *
 HTML5
 CSS (Flexbox, Grid, Animations)
 JavaScript (Filtres, Formulaires)
