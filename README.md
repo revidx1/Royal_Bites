@@ -25,3 +25,7 @@ Mohamed ELAZAQUI -> Page menu + Page gallery
 Youssef BEHLAFI -> Page accueil + Page de reservation
 
 Yassine BEN EL HIRCHE -> Page contact
+
+
+
+link : https://github.com/revidx1/Royal_Bites
